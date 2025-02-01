@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Incorrectly setting innerHTML to an element with a space in its ID.
+    document.getElementById("my Div").innerHTML = "This text will not be shown.";
+  </script>
+</body>
+</html>
